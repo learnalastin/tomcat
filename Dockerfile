@@ -12,8 +12,10 @@ RUN useradd -s /bin/nologin -g tomcat -d /opt/tomcat tomcat
 RUN yum install -y wget
 
 # Download and install tomcat
-RUN wget https://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz
-RUN tar -zxvf apache-tomcat-8.5.37.tar.gz -C /opt/tomcat --strip-components=1
+
+RUN wget https://ftp.byfly.by/pub/apache.org/tomcat/tomcat-8/v8.5.59/bin/apache-tomcat-8.5.59.tar.gz
+#RUN wget https://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz
+RUN tar -zxvf apache-tomcat-8.5.59.tar.gz -C /opt/tomcat --strip-components=1
 RUN chgrp -R tomcat /opt/tomcat/conf
 RUN chmod g+rwx /opt/tomcat/conf
 RUN chmod g+r /opt/tomcat/conf/*
