@@ -9,6 +9,7 @@ RUN yum install -y java-1.8.0-openjdk-devel wget git maven
 RUN groupadd tomcat
 RUN mkdir /opt/tomcat
 RUN useradd -s /bin/nologin -g tomcat -d /opt/tomcat tomcat
+RUN yum install -y wget
 
 # Download and install tomcat
 RUN wget https://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz
