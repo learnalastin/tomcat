@@ -11,6 +11,8 @@ hahah
 4. Copies the built war file to the webapps directory as ROOT.war
 5. Runs catalina.sh as entrypoint script
 
+yfyfyfyfyfyyfyfyfyyfyfyfyyfyfyyfy
+
 ## The cloudbuild.yaml file
 
 Contains configuration to use the Google Cloud Build service which
